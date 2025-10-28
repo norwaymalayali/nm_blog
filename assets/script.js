@@ -1,4 +1,5 @@
 function setLanguage(lang) {
-  if (lang === 'en') window.location.href = '/en/index.html';
-  else window.location.href = '/ml/index.html';
+  const base = '/nm_blog/'; // your repo path
+  if (lang === 'en') window.location.href = base + 'en/index.html';
+  else window.location.href = base + 'ml/index.html';
 }
