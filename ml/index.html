@@ -1,130 +1,159 @@
 <!DOCTYPE html>
 <html lang="ml">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>നോർവേയെ അറിയൂ | Norway Malayali</title>
-  <link rel="stylesheet" href="/assets/style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>നോർവേ മലയാളി | ഹോം</title>
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+/* Hero Section */
+.hero {
+  background: url("/assets/bg.jpg") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-  <style>
-    /* Page-specific tweaks to match theme */
-    body {
-      background: linear-gradient(to bottom right, #002b5c, #004b87);
-      color: white;
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-    }
-    header {
-      background: rgba(0, 0, 0, 0.4);
-      padding: 1em 0;
-      text-align: center;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
-    }
-    header h1 {
-      margin: 0;
-      color: #ffde59;
-      font-size: 2rem;
-    }
-    nav {
-      margin-top: 0.5em;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 1em;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      color: #ffde59;
-    }
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
-    main {
-      text-align: center;
-      padding: 3em 1.5em;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    main h2 {
-      font-size: 2rem;
-      margin-bottom: 0.5em;
-      color: #ffde59;
-    }
-    main p {
-      line-height: 1.6;
-      font-size: 1.1rem;
-    }
+.welcome-box {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2em 3em;
+  border-radius: 20px;
+  max-width: 600px;
+  color: white;
+}
 
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5em;
-      margin-top: 2em;
-    }
+/* Header & Nav */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #002b5c;
+  color: white;
+}
 
-    .card {
-      background: rgba(255,255,255,0.1);
-      border-radius: 15px;
-      padding: 1.5em;
-      box-shadow: 0 0 10px rgba(255,255,255,0.1);
-      transition: 0.3s;
-    }
-    .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(255,255,255,0.2);
-    }
-    .card h3 {
-      color: #ffde59;
-      margin-bottom: 0.5em;
-    }
+header {
+  background: rgba(0,0,0,0.4);
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
 
-    footer {
-      text-align: center;
-      padding: 1em;
-      background: rgba(0, 0, 0, 0.4);
-      font-size: 0.9rem;
-      margin-top: 3em;
-    }
-  </style>
+header h1 { margin: 0; color: #ffde59; font-size: 2rem; }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav a:hover { color: #ffde59; }
+
+/* Main cards section */
+main {
+  text-align: center;
+  padding: 3em 1.5em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main h2 { font-size: 2rem; margin-bottom: 0.5em; color: #ffde59; }
+main p { line-height: 1.6; font-size: 1.1rem; }
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 1.5em;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+.card h3 { color: #ffde59; margin-bottom: 0.5em; }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background: rgba(0,0,0,0.4);
+  font-size: 0.9rem;
+  margin-top: 3em;
+}
+</style>
 </head>
 <body>
-  <header>
-    <h1>നോർവേയെ അറിയൂ</h1>
-    <nav>
-      <a href="index.html">ഹോം</a>
-      <a href="about.html">നോർവേയെ കുറിച്ച്</a>
-      <a href="jobs.html">തൊഴിൽ അവസരങ്ങൾ</a>
-      <a href="culture.html">സംസ്കാരം</a>
-      <a href="contact.html">ബന്ധപ്പെടുക</a>
-    </nav>
-  </header>
 
-  <main>
-    <h2>നോർവേ മലയാളി സ്വാഗതം</h2>
-    <p>നോർവേയുടെ മനോഹരമായ പ്രകൃതി, സമൃദ്ധമായ സംസ്കാരം, തൊഴിൽ, പഠന അവസരങ്ങൾ എന്നിവയെക്കുറിച്ച് പഠിക്കൂ. മലയാളികൾക്കും ലോകത്തിന്റെ മറ്റുനും ആളുകൾക്കും നോർവേയിൽ ജീവിതാനുഭവം എങ്ങനെ ആസ്വദിക്കാമെന്ന് ഇവിടെ അറിയാം.</p>
+<header>
+  <h1>നോർവേ മലയാളി</h1>
+  <nav>
+    <a href="index.html">ഹോം</a>
+    <a href="about.html">നോർവേയെ കുറിച്ച്</a>
+    <a href="jobs.html">തൊഴിൽ</a>
+    <a href="culture.html">സംസ്കാരം</a>
+    <a href="contact.html">ബന്ധപ്പെടുക</a>
+  </nav>
+</header>
 
-    <div class="card-container">
-      <div class="card">
-        <h3>🌄 നോർവേയിലേയ്ക്ക് യാത്ര</h3>
-        <p>ഫിയോഡ്‌സ്, മലനിരകൾ, നോർത്ത്‌േൺ ലൈറ്റ് എന്നിവയുടെ സൗന്ദര്യം അനുഭവിക്കുക.</p>
-      </div>
-      <div class="card">
-        <h3>💼 തൊഴിൽ അവസരങ്ങൾ</h3>
-        <p>ജോബ് ഹണ്ടിംഗ്, വർക്ക് പെർമിറ്റ്, നോർവീജിയൻ വർക്ക് കള്ചർ എന്നിവയുടെ ഉപദേശം.</p>
-      </div>
-      <div class="card">
-        <h3>🎓 പഠനവും ഗവേഷണവും</h3>
-        <p>പ്രമുഖ സർവകലാശാലകളിൽ അപേക്ഷിക്കുന്ന വിധവും ഗവേഷണ അവസരങ്ങളും പഠിക്കൂ.</p>
-      </div>
-      <div class="card">
-        <h3>🧭 നോർവേയിൽ ജീവിക്കുക</h3>
-        <p>വാസസ്ഥലം, ആരോഗ്യപരിപാലനം, ദിവസേന ജീവിതം എന്നിവയെക്കുറിച്ചുള്ള ഗൈഡ്.</p>
-      </div>
+<!-- Hero Section (text only) -->
+<div class="hero">
+  <div class="overlay">
+    <div class="welcome-box">
+      <h1>നോർവേ മലയാളി<span>ിലേക്ക് സ്വാഗതം</span></h1>
+      <p>നോർവേയുടെ സംസ്കാരം, തൊഴിൽ അവസരങ്ങൾ, ജീവിതശൈലി എന്നിവയെക്കുറിച്ച് അറിയൂ.</p>
     </div>
-  </main>
+  </div>
+</div>
 
-  <footer>
-    &copy; 2025 Norway Malayali | നോർവേയിൽ സ്നേഹത്തോടെ തയ്യാറാക്കിയിട്ടുണ്ട് ❤️
-  </footer>
+<!-- Main Cards Section -->
+<main>
+  <h2>എന്തുകൊണ്ട് നോർവേ?</h2>
+  <p>നോർവേയുടെ മനോഹരമായ പ്രകൃതി, സമ്പന്നമായ സംസ്കാരം, തൊഴിലും പഠന അവസരങ്ങളും പരിചയപ്പെടൂ. Malayali അഭ്യർത്ഥകരും ലോകത്തെ യാത്രക്കാർക്കും ഈ നോർഡിക് രാജ്യത്തെ അനുഭവപ്പെടാനുള്ള മാർഗ്ഗങ്ങൾ ഞങ്ങൾ പങ്കുവെക്കുന്നു.</p>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>🌄 നോർവേയെ ആസ്വദിക്കുക</h3>
+      <p>ഫ്യോർഡുകൾ, മലനിരകൾ, നോർദേൺ ലൈറ്റുകൾ — പ്രകൃതിയുടെ അതിശയങ്ങൾ.</p>
+    </div>
+    <div class="card">
+      <h3>💼 തൊഴിൽ അവസരങ്ങൾ</h3>
+      <p>ജോലി കണ്ടെത്തൽ, തൊഴിൽ അനുമതികൾ, നോർവീജിയൻ ജോലി സംസ്കാരം എന്നിവയെക്കുറിച്ച് മാർഗ്ഗനിർദ്ദേശങ്ങൾ.</p>
+    </div>
+    <div class="card">
+      <h3>🎓 പഠനം & ഗവേഷണം</h3>
+      <p>തോപ്പു സർവകലാശാലകളിൽ അപേക്ഷിക്കുന്നതിനും ഗവേഷണ അവസരങ്ങൾക്കുമായി മാർഗ്ഗങ്ങൾ.</p>
+    </div>
+    <div class="card">
+      <h3>🧭 നോർവേയിൽ ജീവിതം</h3>
+      <p>വാസസ്ഥലം, ആരോഗ്യ പരിപാലനം, ദൈനംദിന ജീവിതം Malayali കാഴ്ചപ്പാടിൽ.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Norway Malayali | Made with ❤️ from Norway
+</footer>
+
 </body>
 </html>
