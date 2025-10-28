@@ -1,4 +1,12 @@
 function setLanguage(lang) {
-  if (lang === 'en') window.location.href = 'nm_blog/en/index.html';
-  else window.location.href = 'nm_blog/ml/index.html';
+  // This detects your current base path (e.g., /nm_blog/)
+  const currentPath = window.location.pathname;
+  const repoPath = currentPath.split('/')[1]; // "nm_blog"
+  const base = '/' + repoPath + '/';
+
+  if (lang === 'en') {
+    window.location.href = base + 'en/index.html';
+  } else if (lang === 'ml') {
+    window.location.href = base + 'ml/index.html';
+  }
 }
